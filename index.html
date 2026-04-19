@@ -1,90 +1,263 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>さいたまブロンコス 応援サイト | GO BRONCOS!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
+
+  <!-- ヘッダー -->
   <header>
     <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
+      <div class="header-logo">
+        <span class="logo-icon">🏀</span>
+        <div class="logo-text">
+          <span class="logo-main">SAITAMA BRONCOS</span>
+          <span class="logo-sub">さいたまブロンコス 応援サイト</span>
+        </div>
       </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスンスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+      <nav class="header-nav">
+        <a href="#about">チームについて</a>
+        <a href="#schedule">スケジュール</a>
+        <a href="#players">選手紹介</a>
+        <a href="#cheer">応援しよう</a>
+      </nav>
     </div>
   </header>
-  <div class="top-wrapper">
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">B.LEAGUE 2025-26</p>
+      <h1 class="hero-title">GO<br><span>BRONCOS!</span></h1>
+      <p class="hero-desc">さいたまブロンコスと共に戦おう。<br>コートに響け、埼玉の魂！</p>
+      <a href="#cheer" class="btn-primary">今すぐ応援する</a>
+    </div>
+    <div class="hero-balls">
+      <span class="ball b1">🏀</span>
+      <span class="ball b2">🏀</span>
+      <span class="ball b3">🏀</span>
+    </div>
+  </section>
+
+  <!-- チームについて -->
+  <section id="about" class="about">
     <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
+      <div class="section-heading">
+        <h2>ABOUT THE TEAM</h2>
+        <p class="section-sub">チームについて</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">🏟️</div>
+          <h3>ホームアリーナ</h3>
+          <p>さいたま市記念総合体育館を拠点に、地元ファンと共に熱い試合を繰り広げています。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🎽</div>
+          <h3>チームカラー</h3>
+          <p>オレンジ・ネイビー・ホワイトの3色が埼玉ブロンコスのアイデンティティ。情熱と誇りを体現する配色です。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🏆</div>
+          <h3>目指せ頂点</h3>
+          <p>B.LEAGUEチャンピオンシップ制覇を目標に、選手・スタッフ・ファンが一体となって戦います。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">❤️</div>
+          <h3>地域との絆</h3>
+          <p>埼玉の地域コミュニティと深く結びつき、スポーツを通じて地域を元気にする活動を続けています。</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="lesson-wrapper">
+  </section>
+
+  <!-- スケジュール -->
+  <section id="schedule" class="schedule">
     <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
+      <div class="section-heading light">
+        <h2>SCHEDULE</h2>
+        <p class="section-sub">試合スケジュール</p>
       </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
+      <div class="schedule-list">
+        <div class="schedule-item upcoming">
+          <div class="schedule-date">
+            <span class="month">4月</span>
+            <span class="day">26</span>
+            <span class="year">2026</span>
           </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+          <div class="schedule-info">
+            <span class="badge home">HOME</span>
+            <h3>さいたまブロンコス vs 千葉ジェッツ</h3>
+            <p>🏟️ さいたま市記念総合体育館　⏰ 14:00 TIPOFF</p>
+          </div>
+          <a href="#" class="schedule-btn">チケット</a>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
+        <div class="schedule-item">
+          <div class="schedule-date">
+            <span class="month">5月</span>
+            <span class="day">3</span>
+            <span class="year">2026</span>
           </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+          <div class="schedule-info">
+            <span class="badge away">AWAY</span>
+            <h3>川崎ブレイブサンダース vs さいたまブロンコス</h3>
+            <p>🏟️ とどろきアリーナ　⏰ 15:00 TIPOFF</p>
+          </div>
+          <a href="#" class="schedule-btn">詳細</a>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
+        <div class="schedule-item">
+          <div class="schedule-date">
+            <span class="month">5月</span>
+            <span class="day">10</span>
+            <span class="year">2026</span>
           </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+          <div class="schedule-info">
+            <span class="badge home">HOME</span>
+            <h3>さいたまブロンコス vs 宇都宮ブレックス</h3>
+            <p>🏟️ さいたま市記念総合体育館　⏰ 13:00 TIPOFF</p>
+          </div>
+          <a href="#" class="schedule-btn">チケット</a>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
+        <div class="schedule-item">
+          <div class="schedule-date">
+            <span class="month">5月</span>
+            <span class="day">17</span>
+            <span class="year">2026</span>
           </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+          <div class="schedule-info">
+            <span class="badge away">AWAY</span>
+            <h3>アルバルク東京 vs さいたまブロンコス</h3>
+            <p>🏟️ 有明コロシアム　⏰ 15:00 TIPOFF</p>
+          </div>
+          <a href="#" class="schedule-btn">詳細</a>
         </div>
       </div>
-      <div class="clear"></div>
     </div>
-  </div>
-  <div class="message-wrapper">
+  </section>
+
+  <!-- 選手紹介 -->
+  <section id="players" class="players">
     <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
+      <div class="section-heading">
+        <h2>PLAYERS</h2>
+        <p class="section-sub">選手紹介</p>
       </div>
-      <span class="btn message">さっそく開発する</span>
+      <div class="players-grid">
+        <div class="player-card">
+          <div class="player-num">#3</div>
+          <div class="player-avatar">🏀</div>
+          <div class="player-info">
+            <h3>ポイントガード</h3>
+            <p class="player-pos">PG</p>
+            <p class="player-desc">チームの司令塔。スピードと視野の広さでゲームをコントロールする。</p>
+          </div>
+        </div>
+        <div class="player-card featured">
+          <div class="player-num">#10</div>
+          <div class="player-avatar">🌟</div>
+          <div class="player-info">
+            <h3>スモールフォワード</h3>
+            <p class="player-pos">SF / キャプテン</p>
+            <p class="player-desc">チームキャプテン。攻守両面でチームを牽引するエースプレイヤー。</p>
+          </div>
+          <span class="captain-badge">CAPTAIN</span>
+        </div>
+        <div class="player-card">
+          <div class="player-num">#21</div>
+          <div class="player-avatar">💪</div>
+          <div class="player-info">
+            <h3>センター</h3>
+            <p class="player-pos">C</p>
+            <p class="player-desc">強靭なフィジカルでゴール下を制圧。リバウンドとブロックの要。</p>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-num">#34</div>
+          <div class="player-avatar">🎯</div>
+          <div class="player-info">
+            <h3>シューティングガード</h3>
+            <p class="player-pos">SG</p>
+            <p class="player-desc">3ポイントシュートの精度が高く、接戦での勝負強さが光る。</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- 応援しよう -->
+  <section id="cheer" class="cheer">
+    <div class="container">
+      <div class="section-heading light">
+        <h2>CHEER UP!</h2>
+        <p class="section-sub">一緒に応援しよう</p>
+      </div>
+      <div class="cheer-grid">
+        <div class="cheer-card">
+          <div class="cheer-icon">📣</div>
+          <h3>応援チャント</h3>
+          <div class="chant-box">
+            <p class="chant">「ブロンコス！ブロンコス！<br>勝って！勝って！ブロンコス！」</p>
+            <p class="chant">「さい・た・ま！ さい・た・ま！<br>ブロンコス 最高！」</p>
+          </div>
+        </div>
+        <div class="cheer-card">
+          <div class="cheer-icon">🎟️</div>
+          <h3>試合観戦ガイド</h3>
+          <ul class="cheer-list">
+            <li>✅ チケットは公式サイトまたはチケットぴあで購入</li>
+            <li>✅ ホームゲームはオレンジグッズで会場を染めよう</li>
+            <li>✅ ハーフタイムのパフォーマンスもお楽しみに！</li>
+            <li>✅ 試合後はサイン会が開催されることも</li>
+          </ul>
+        </div>
+        <div class="cheer-card">
+          <div class="cheer-icon">📱</div>
+          <h3>SNSで応援</h3>
+          <p>試合の感想や応援メッセージをハッシュタグで投稿しよう！</p>
+          <div class="hashtags">
+            <span class="hashtag">#さいたまブロンコス</span>
+            <span class="hashtag">#GOBroncos</span>
+            <span class="hashtag">#Bリーグ</span>
+            <span class="hashtag">#埼玉バスケ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 応援メッセージバナー -->
+  <section class="banner">
+    <div class="container banner-content">
+      <h2>一緒に頂点を目指そう！</h2>
+      <p>さいたまブロンコスの戦いは続く。君の声援がチームの力になる。</p>
+      <a href="#" class="btn-primary large">公式サイトへ</a>
+    </div>
+  </section>
+
+  <!-- フッター -->
   <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <span>🏀</span>
+        <div>
+          <p class="footer-name">SAITAMA BRONCOS</p>
+          <p class="footer-tagline">さいたまブロンコス 応援サイト</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#about">チームについて</a>
+        <a href="#schedule">スケジュール</a>
+        <a href="#players">選手紹介</a>
+        <a href="#cheer">応援しよう</a>
+      </div>
+      <p class="footer-copy">© 2026 さいたまブロンコス ファンサイト — このサイトは非公式のファンサイトです</p>
     </div>
   </footer>
+
 </body>
 </html>
